@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <h1><a href="main.html">codedamm quiz</a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a id="leaderboad">Highest scores<i class="fas fa-hand-point-left fa-lg"></i>
+                            </i></a></li>
+                    <li>
+                        <div id="time_div">
+                            <span id="time">Time:50</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            </nav>
+            
+    </header>
+    <main>
+        <div id="start_div">
+            <div id="content">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer to following code-related questions with in the limit.</p>
+                <p>keep in mind that incorrect answer will penalize your score/time by ten second!</p>
+                <button id="start_btn">Start Quiz</button>
+            </div>
+        </div>
+
+        <div id="quiz_div">
+            <div id="quiz_content">
+            </div>
+            <hr>
+            <div id="incorrect">
+                <p>Incorrect</p>
+            </div>
+        </div>
+
+        <div id="failed">
+            <div id="failed_content">
+                <h3>
+                    Time is over!!
+                    <div>
+                        <button class="play_againBtn" onclick="playAgain()">Play Again</button>
+                    </div>
+                </h3>
+            </div>
+        </div>
+        <div id="result">
+            <div id="result_content">
+                <h2>All Done</h2>
+                <p id="finalScore"></p>
+                <form id="nameForm">
+                    <input type="text" id="userName" placeholder="Enter Your Name" maxlength="3" minlength="3">
+                    <button id="submitBtn" type="submit">Submit</button>
+                </form>
+                <button class="play_againBtn" onclick="playAgain()">Play Again <i class="fas fa-rotate-forward"></i></button>
+            </div>
+        </div>
+        <div id="highScore">
+            <ol id="scoreList"></ol>
+            <button id="backBtn" onclick="playAgain()">Back</button>
+            <button id="clearHighScore" onclick="clearHighScore()">Clear High Score</button>
+
+        </div>
+    </main>
+
+
+    <!--     <div class="main-content">
+        <main>
+            <h1>CODING QUIZ CHALLENGE</h1>
+            <p id="question">try to answer the questions</p>
+            <button  id="button">start quiz</button>
+        </main>
+    </div>
+    <div class="main-contents" id="quiz">
+        <main class="question">
+            <h1>NEXT QUESTIOJO</h1>
+            <p>try to answer the questions</p>
+            <div class="types">
+                <button id="buttons">OPTION 1</button>
+                <button id="buttons">OPTION 2</button>
+                <button id="buttons">OPTION 3</button>
+                <button id="buttons">OPTION 4</button>
+            </div>
+            <button id="start-quiz-button" id="quizs">Start Quiz</button>
+        </main>
+    </div> -->
+
+    <script src="js.js"></script>
+</body>
+
+</html>
